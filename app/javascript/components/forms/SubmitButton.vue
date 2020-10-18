@@ -2,7 +2,7 @@
   <b-field>
     <div class="control">
       <b-button native-type="submit" type="is-primary" size="is-medium">
-        Submit
+        TEST
       </b-button>
     </div>
   </b-field>

@@ -25,6 +25,14 @@
             {{ type.name }} <a>{{ props.open ? '-' : '+' }}</a>
           </span>
           <ul class="mt-1">
+            <!-- <li>
+              <b-checkbox
+              @click="selectAll"
+              v-model="allSelected"
+              >
+                Toggle all
+              </b-checkbox>
+            </li> -->
             <li v-for="filter of type.filters" :key="filter.id">
               <b-checkbox
                 :native-value="filter.id"
@@ -78,6 +86,7 @@ export default {
           })
           return memo
         }, {}),
+      d: false,
     }
   },
 }
